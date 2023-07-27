@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+Tour added
+<br><br>
+<table border=10>
+<tr th:each="ref: ${mylist}">
+    <td th:text="${ref.Tourid}" />
+    <td th:text="${ref.Tourname}" />
+    <td th:text="${ref.Tourtype}" />
+    <td th:text="${ref.cost}" />
+
+</tr>
+</table>
+</body>
+</html>
